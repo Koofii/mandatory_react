@@ -45,24 +45,7 @@ It will return a new game object. If the move was invalid
 an unchanged game will be returned.
 */
 
-function gameAlreadyWon(status){
-  if(status === 'plr1WON' || status === 'plr2WON'){
-    return true
-  }
-  return null;
-}
 
-function calculateDraw(board){
-  for(let i; i < board.length; i++){
-    if (board[i] === 0){
-      
-      // game continues
-      return false;
-    }
-    // game is a draw
-    return true;
-  }
-}
 
 function calculateWinner(squares) {
   const lines = [

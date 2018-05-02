@@ -45,8 +45,6 @@ It will return a new game object. If the move was invalid
 an unchanged game will be returned.
 */
 
-
-
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
